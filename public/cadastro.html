@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Farmácia - Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <h1>FARMÁCIA</h1>
+        <li id="menu">
+            <div class="link"><ul><a href="/index">Home</a></ul></div>
+            <div class="link"><ul><a href="/busca">Busca</a></ul></div>
+            <div class="link"><ul><a href="/delete">Deletar</a></ul></div>
+            <div class="link"><ul><a href="/atualizar">Atualizar</a></ul></div>
+        </li>
+    </header>
+
+    <form action="/add" method="POST">
+        <fieldset id="cadastro">
+
+            <legend>Cadastro de Produtos</legend>
+
+            <label for="nome">Nome do Produto:</label>   <input type="text" name="nome" id="nome">
+            <label for="nlote">Número do lote:</label>   <input type="text" name="nlote" id="nlote">
+            <label for="funcao">Função:</label>   <input type="text" name="funcao" id="funcao">
+            <label for="quantidade">Quantidade em Estoque</label>   <input type="number" name="quantidade" id="quantidade">
+            <label for="alocacao">Alocado para paciente</label>   <input type="text" name="alocacao" id="alocacao">
+
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Farmácia - Busca</title>
+</head>
+<body>
+    <header>
+        <h1>FARMÁCIA</h1>
+        <li id="menu">
+            <div class="link"><ul><a href="/index">Home</a></ul></div>
+            <div class="link"><ul><a href="/cadastro">Cadastro</a></ul></div>
+            <div class="link"><ul><a href="/delete">Delete</a></ul></div>
+            <div class="link"><ul><a href="/atualizar">Atualizar</a></ul></div>
+        </li>
+    </header>
+
+    <form action="/search-nlote" method="POST">
+        <fieldset>
+            <legend>Busca</legend>
+            <label for="busca">Buscar por Número do Lote</label> <input type="text" name="nlote" id="nlote">
+            <button type="submit">Buscar</button>
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
